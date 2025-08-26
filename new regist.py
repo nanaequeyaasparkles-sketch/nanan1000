@@ -1,6 +1,6 @@
 import streamlit as st
 import gspread
-from google. oauth.service_account import Credentials
+from google.oauth.service_account import Credentials
 import pandas as pd
 scope=["https://spreadsheets.google.com/feeds","https://www.googleapis.com/auth/drive"]
 @st. cache_resource
@@ -52,4 +52,5 @@ with tab2:
 				st.success("password do not match")
 			else:
 			  client.append_row([name,username,genda,contact,dob,email,password])
+
 			  st.success("registration successful")
