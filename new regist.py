@@ -23,7 +23,7 @@ with tab1:
 		found=False
 		if st.form_submit_button("Login"):
 			if username100=="admin" and password100=="nana1":
-				df=pd.DataFrame(user)
+				df=pd.DataFrame(users)
 				st.dataframe(df)
 			else:
 				for user in users:
@@ -54,6 +54,7 @@ with tab2:
 			  client.append_row([name,username,genda,contact,dob,email,password])
 
 			  st.success("registration successful")
+
 
 
 
